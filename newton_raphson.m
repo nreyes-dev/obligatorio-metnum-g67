@@ -5,8 +5,8 @@ function x = newton_raphson(x0, f, Jf, tol, max_it, parte)
     x = x0;
     k = 0;
 
-    while norm(f(x)) >= tol && k < max_it
-        b = -f(x);
+    while norm(f(x, parte)) >= tol && k < max_it
+        b = -f(x, parte);
         A = Jf(x, parte);
 
         % resolver el sistema lineal Ad = b

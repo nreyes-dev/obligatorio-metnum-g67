@@ -9,4 +9,4 @@ disp(solucion);
 
 % verificar solucion
 disp("Verificaciones para la solución: \n")
-disp(f(solucion))
+disp(f(solucion, 1))
